@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative01</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: green;
+            /*float会脱标，后面的box会占用脱标的位置；relative是不会脱标，经常结合其他属性top/left/right/bottom,即使移动后，后面的box也不会占用他的位置,同一个方向上，左右或者上下不可同时用*/
+            position: relative;
+            top: 20px;
+            left: 40px;
+            /*此处如果加margin/padding，影响的是标准流中的盒子，而不是移动的盒子。可以注释掉margin看看效果*/
+            margin: 100px;
+        }
+        .box3{
+            background-color: blue;
+        }
+        input{
+            width: 200px;
+            height: 50px;
+        }
+        img{
+            width: 150px;
+            height: 50px;
+            /*让图片相对定位，就可以让输入框和图片上面对齐了*/
+            position: relative;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <hr>
+    <!--微调图片的位置，用relative，而不是float方法-->
+    <input type="text">
+    <img src="image/confirmedCode163.jpg">
+
+</body>
+</html>

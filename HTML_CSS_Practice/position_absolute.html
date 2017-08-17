@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>absolute</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        .box1{
+            background-color: red;
+        }
+        /*让box2变成absolute定位,觉对定位是脱离标准流的，就像float一样。所以box3占用了box2的位置。*/
+        .box2{
+            background-color: yellow;
+            position: absolute;
+            /*配合left/bottom/top/right使用。绝对定位相对body来定位，可以放在（x，y）这个位置*/
+            right: 0px;
+        }
+        .box3{
+            background-color: blue;
+            width: 110px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
