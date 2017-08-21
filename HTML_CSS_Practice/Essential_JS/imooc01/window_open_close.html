@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>open</title>
+    <!--
+        window.open('URL','窗口显示方式','参数字符串'];
+        URL缺省，窗口不显示任何文档；
+        窗口显示方式：_blank;_top;_self;_self; 相同name的窗口只能创建一个，要想创建多个，name名字不能相同。name不能包含空格。
+        参数字符串：
+            top：number，窗口顶部离开屏幕顶部的像素数；
+            left：number，窗口左部离开屏幕顶部的像素数；
+            width：number，窗口宽度；
+            height：number，窗口高度；
+            menubar：yes/no，窗口有没有菜单；
+            toolbar：yes/no，窗口有没有工具条；
+            scrollbars：yes/no，有没有滚动条；
+            status： yes/no，有没有状态栏；
+    -->
+
+    <script>
+        window.open('http://www.google.com','_blank','width=800, height=400,toolbar=no, scrollbars=no');
+
+        <!--syntax: window.close() or <Object>.close();-->
+        var myWeb = window.open('http://www.google.com');
+        myWeb.close();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

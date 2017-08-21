@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alert_Confirm_Prompt</title>
+    <!--javaScript has three kind of popup boxes: alert box, confirm box and prompt提示 box.-->
+    <script>
+        var myNum = 30;
+        alert('this number is ');
+        alert(myNum);
+        <!--syntax：window.alert（String or var), if you want to make sure information comes through to the user. When an alert box pops up, the user will have click 'ok' to proceed继续.-->
+
+        var myMessage = confirm('do you like JavaScript?');
+        if(myMessage == true){
+            document.write('Good Like!')
+        }else{
+            document.write('Don\'t give up');
+        }
+        <!--syntax: window.confirm(str), it returns a Boolean value. if you want the user to verify or accept something. if the user clicks 'ok'/'cancel', the box returns 'true'/'false'. -->
+
+        var myName = prompt('what is your name?','input');
+        if(myName != null){
+            document.write('hello ' + myName);
+        }else{
+            document.write('don\' forget to input your name. Bye');
+        }
+        <!--window.prompt('str1','str2'),if you want the user to input a value before entering a page. 'ok' returns the input value; 'cancel' returns 'null'. str1是显示在消息对话框中的文本；str2是显示在文本框中的内容，可以省略。-->
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+        className属性设置或返回元素的class属性。
+        object.className = classname;
+        1.获取元素的class属性(也就是class的名字)；
+        2.为网页内的某个元素指定一个css样式来更改该元素的外观。
+    -->
+    <style>
+        input{
+            font-size: 20px;
+        }
+        .one{
+            width: 200px;
+            background-color: gray;
+        }
+        .two{
+            font-size: 20px;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <p class="one" id="con">i am javascript!</p>
+    <input type="button" value="change" onclick="modifyclass()">
+    <script>
+        var mychar = document.getElementById('con');
+        document.write('p元素class值为 ' + mychar.className +'<br>');
+        function modifyclass(){
+            mychar.className = 'two';  //change the className;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+        syntax: object.style.display = 'value';
+        value : none -- hidden;    block -- 显示为块级元素；
+    -->
+
+    <script type="text/javascript">
+        function hidetext()
+        {
+            var mychar = document.getElementById("con");
+            mychar.style.display='none';
+        }
+        function showtext()
+        {
+            document.getElementById("con").style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <p id="con"> hello world. </p>
+    <input type="button" value="don't show the content." onclick="hidetext()">
+    <input type="button" value="to show the content." onclick="showtext()">
+</body>
+</html>

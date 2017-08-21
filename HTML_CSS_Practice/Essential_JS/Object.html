@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FindObject</title>
+<!--
+    1. <script>
+        // 如果我们把JS写在这里，会什么也找不到，因为运行到第8行，它不会找到test01整个id，所以要放到body后面。
+        alert(document.getElementById('test01'));
+        </script>
+    2. JS没有class的概念，是用function，是基于言行拷贝的，java是基于class的。
+    3. 定义一个：
+            function person（name，age）{
+                this.name = name;
+                this.age = age;
+                this.address = 'new york';
+                如果在function里面，不使用this声明num，‘num’仅仅是一个局部变量，不是class的属性。也就是p1.num是错误的。
+                var num = 10；
+            }
+            var p1 = new person('tom',12);     //p1的类型是obj
+            alert(p1.name+","+p1.address);     //tom,new york
+     4. var x = function xx(){ alert('hello')}; 在内存中是这么表示，变量x指向了一个function，那么也就可以说x是function。
+     5. function yy(){alert('world'}；在内存中是这么表示，创建一片内存alert（‘world'），然后yy指向alert这片内存。
+        var y = yy; 此处y指向的不是yy，而是alert这片内存。跟4里面的是有一点点不同。
+     6. function fn(){
+            return 100;
+        }
+        var m = fn;
+        //所以可以用fn（）来调用；也可以用m（）来调用，这两个fn()和m()是一样的，相当于函数名是可以改的。这是静态语言可以做到的。
+        fn();
+        m();
+        //这个z表示接收了一个fn（）return的返回值，也就是z是100；
+        var z = fn();
+    7. function fn02（）{
+            this. m = 'name';       //相当于java里的field。必须加this指定field。
+            this. function fn03（）{  //相当于java里的method。必须用this指定才能成为method。
+                alert（'here01');
+            }
+        }
+        注意：var pp = fun02; 两种调用方法，
+            pp.m  ==  pp['m']   //通过对象['属性字符串']完成field调用。
+    8. 在JS中，对于对象而言，可以通过for in来变量对象的属性。
+        for（var a in p1）{   //p1是obj
+            //可以获取对象中的所有显示声明的属性（field）；
+            alert（a）；
+            alert（p1.a）;//会显示undefined，因为p1是obj，它会在obj中找a这个field，但是p1中没有这个a属性，所以是undefined。
+            alert（p1[a]);//correction. 因为这是说，在p1中去找所有的fields，而不是找'a'这个属性。
+        }
+    -->
+    <script>
+        function fn(){
+            alert('fn');
+        }
+        var x = fn;
+        alert(fn);
+    </script>
+</head>
+<body>
+
+</body>
+<!--<script>
+    <H1>the key is to find an Object.</H1>
+    <div id="test01">
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+    </div>
+    <div class="test02"></div>
+    <input type="text" name="username" id="" value="ploy">
+
+    如果我们把JS写在这里,会什么也找不到,因为运行到第8行,它不会找到test01整个id,所以要放到body后面.
+//   我们用id去查询，返回值是obj。
+    console.log(document.getElementById('test01'));
+//    使用tag去查找，返回值是对象的集合:Object HTMLCollection（三个p tag的集合）。注意：即使找到一个对象，也是包装成‘对象集合’返回。 eg: alert(document.getElementsByTagName('p').length);    //3
+//    怎么使用‘对象集合’呢？而不是对象。
+    var ps = document.getElementsByName('p');
+    ps[0].style.background = "red";
+</script>-->
+</html>

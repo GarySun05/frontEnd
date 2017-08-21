@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+        syntax:object.innerHTML。innerHTML用于获取或者替换HTML中的内容。怎么获取innerHTML的内容呢？用document.getElementById('id'),然后就可以打印出内容或者修改内容了。
+    -->
+
+</head>
+<body>
+<!--notice: because we changed this content in javascript, so it showed the changed content on website. 'i don't love js.'-->
+    <p id="con">i love js!</p>
+
+    <script>
+        var myCon = document.getElementById("con");
+//        it showed on website the origin content,'i love js';
+        document.write('origin statement: '+myCon.innerHTML+"<br>");
+
+        myCon.innerHTML = 'changed statement；i don\'t love js!'+'<br>';
+        document.write(myCon.innerHTML + "<br>");
+    </script>
+</body>
+</html>

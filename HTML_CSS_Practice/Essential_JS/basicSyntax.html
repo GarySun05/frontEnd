@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BasicSyntax</title>
+    <!--
+    1. JS和java不同，JS是动态，也就是一行一行的执行，即使有错误，如果没有执行到那一行，也不会检查出来。
+    2. 不论variable在哪里，只要不加var，会被人认为是global variable。所以一定用var去define。
+    3. 我们可以通过alert（typeof var）来查看var的类型。常用的类型有：Number/String/Data/Array...
+    4. 强制类型转换：java是(number) a, JS是Number（a）。eg：a=‘11’，alert(Number(a)),就会得到11。注意，如果强制转换一个值得到一个结果NaN，就是not a number，不是一个数字。
+    5. 另一个转换方法alert（parseInt（b）），可以把字符串开头的几个数字转换成数字，如果字符串开头不是数字，就会得到NaN。
+    6. 定义数组： var arr = ['a','b', 1, 3]; alert(typeOf arr),对于数组的对象而言，得到的是obj，而不是Array类型。
+    7. alert(f1), 会显示类型是function。
+    8. 如果想要精确显示类型，可以用alert（as instanceOf arr），可以判断出是Array。
+    9. boolean型。再JS中，！0就是true；0是false。特别注意，NaN是false；用alert（！！0/！！-1/！！NaN...)判断，也就是‘!!’。
+            var size = ''; //空
+            if(!parseInt(size)){}  //不为空，就xxx。
+    10. 当一个变量没有值的时候，他就是undefined；undefined类型是false。
+            var size；
+            alert（size）；  //undefined
+            alert（！！size）；//NaN
+    11. 注意，再JS中，除了NaN，undefined，0这三个都是false，其他都是true。
+    12. for（var i = 0; i <= as.length; i++){ alert[i]}
+    -->
+
+    <script>
+        function f1(){
+            var a = 10;
+            alert(a);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="button1" onclick="f1()">
+
+</body>
+</html>
