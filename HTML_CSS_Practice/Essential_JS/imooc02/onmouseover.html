@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>how to use onmouseover</title>
+    <!--
+        当鼠标经过事件，当鼠标移到一个对象上时，该对象就触发onmouseover事件，并执行onmouseover时间调用的程序。实现鼠标经过“确定”按钮时，触发onmouseover事件，调用函数info（），弹出消息框，代码如下。
+    -->
+    <script>
+        function info(){
+            confirm('please input your name, then click \'yes\'');
+        }
+    </script>
+</head>
+<body>
+    <form>
+        password:<input name="password" type="text">
+        <!--当鼠标经过‘确定’按钮时，触发onmouseover=‘info（）’-->
+        <input name="button" type="button" value="yes" onmouseover="info()">
+    </form>
+</body>
+</html>

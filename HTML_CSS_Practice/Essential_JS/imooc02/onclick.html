@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        课程是imooc的javascript进阶篇，onclick, onmouseover, onmouseout, onfocus, onblur, onselect, onchange, onload, onunload！
+    -->
+    <meta charset="UTF-8">
+    <title>how to use onclick</title>
+    <script type="text/javascript">
+        function add2(){
+            var numa,numb,sum;
+            numa=6;
+            numb=8;
+            sum=numa+numb;
+            document.write("the sum of two numbers: "+sum);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input name="button" type="button" value="submit" onclick="add2()" />
+    </form>
+</body>
+</html>

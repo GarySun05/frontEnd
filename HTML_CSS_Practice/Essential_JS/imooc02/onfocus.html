@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    当网页中的对象获得聚点时，执行onfocus调用的程序就会被执行。
+    -->
+    <script>
+        function message(){
+            alert("please choose your occupation!");
+        }
+    </script>
+</head>
+<body>
+    please choose your occupation:
+    <form >
+        <select name="career" onfocus="message()">
+            <option>student</option>
+            <option>accounting</option>
+            <option>actor</option>
+            <option>teacher</option>
+        </select>
+    </form>
+</body>
+</html>

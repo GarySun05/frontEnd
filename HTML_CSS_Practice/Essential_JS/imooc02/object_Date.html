@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    Date 日期对象
+    日期对象可以储存任意一个日期，并且可以精确到毫秒数（1/1000 秒）。
+
+    定义一个时间对象 :
+    var Udate=new Date();
+    注意:使用关键字new，Date()的首字母必须大写。
+
+    使 Udate 成为日期对象，并且已有初始值：当前时间(当前电脑系统时间)。
+
+    如果要自定义初始值，可以用以下方法：
+    var d = new Date(2012, 10, 1);  //2012年10月1日
+    var d = new Date('Oct 1, 2012'); //2012年10月1日
+    我们最好使用下面介绍的“方法”来严格定义时间。
+
+    访问方法语法：“<日期对象>.<方法>”
+    Date对象中处理时间和日期的常用方法：
+        get/setDate();
+        get/setFullYear();
+        get/setYear();
+        get/setMonth();
+        get/setHours();
+        get/setMinutes();
+        get/setSeconds();
+        get/setTime();
+-->
+</head>
+<body>
+    <!--
+    返回/设置年份方法
+    get/setFullYear() 返回/设置年份，用四位数表示。
+
+    var mydate=new Date();//当前时间2014年3月6日
+    document.write(mydate+"<br>");//输出当前时间
+    document.write(mydate.getFullYear()+"<br>");//输出当前年份
+    mydate.setFullYear(81); //设置年份
+    document.write(mydate+"<br>"); //输出年份被设定为 0081年。
+    注意:不同浏览器， mydate.setFullYear(81)结果不同，年份被设定为 0081或81两种情况。
+
+    结果:
+    Thu Mar 06 2014 10:57:47 GMT+0800
+    2014
+    Thu Mar 06 0081 10:57:47 GMT+0800
+
+    注意:
+    1.结果格式依次为：星期、月、日、年、时、分、秒、时区。(火狐浏览器)
+    2. 不同浏览器，时间格式有差异。
+    -->
+
+    <!--
+    getDay() 返回星期，返回的是0-6的数字，0 表示星期天。如果要返回相对应“星期”，通过数组完成，代码如下:
+
+    <script type="text/javascript">
+      var mydate=new Date();//定义日期对象
+      var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+    //定义数组对象,给每个数组项赋值
+      var mynum=mydate.getDay();//返回值存储在变量mynum中
+      document.write(mydate.getDay());//输出getDay()获取值
+      document.write("今天是："+ weekday[mynum]);//输出星期几
+    </script>
+    注意：以上代码是在2014年3月7日，星期五运行。
+
+    结果:
+    5
+    今天是：星期五
+    -->
+</body>
+</html>
