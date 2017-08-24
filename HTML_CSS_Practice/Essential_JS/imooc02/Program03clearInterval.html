@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function clock(){
+            var time=new Date();
+            document.getElementById("clock").value = time;
+        }
+        // 每隔100毫秒调用clock函数，并将返回值赋值给i
+        var i=setInterval("clock()",100);
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="clock" size="50"  />
+        <input type="button" value="Stop" onclick="clearInterval(i)"  />
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+        screen对象
+        screen对象用于获取用户的屏幕信息。
+        语法：
+        window.screen.属性
+        对象属性:
+        availHeight     窗口可以使用的屏幕高度，单位像素
+        availWidth      窗口可以使用的屏幕宽度，单位像素
+        colorDepth      用户浏览器表示的颜色位数，通常为32位（每像素的位数）
+        pixelDepth      屏幕的高度，单位像素
+        height          屏幕的高度，单位像素
+        width           屏幕的宽度，单位像素
+    -->
+
+    <!--
+    屏幕分辨率的高和宽
+    window.screen 对象包含有关用户屏幕的信息。
+    1. screen.height 返回屏幕分辨率的高
+    2. screen.width 返回屏幕分辨率的宽
+    注意:
+    1.单位以像素计。
+    2. window.screen 对象在编写时可以不使用 window 这个前缀。
+    我们来获取屏幕的高和宽，代码如下:
+    <script type="text/javascript">
+      document.write( "屏幕宽度："+screen.width+"px<br />" );
+      document.write( "屏幕高度："+screen.height+"px<br />" );
+    </script>
+    -->
+
+    <!--
+    屏幕可用高和宽度
+    1. screen.availWidth 属性返回访问者屏幕的宽度，以像素计，减去界面特性，比如任务栏。
+    2. screen.availHeight 属性返回访问者屏幕的高度，以像素计，减去界面特性，比如任务栏。
+    注意:
+    不同系统的任务栏默认高度不一样，及任务栏的位置可在屏幕上下左右任何位置，所以有可能可用宽度和高度不一样。
+    我们来获取屏幕的可用高和宽度，代码如下：
+    <script type="text/javascript">
+    document.write("可用宽度：" + screen.availWidth);
+    document.write("可用高度：" + screen.availHeight);
+    </script>
+    -->
+</head>
+<body>
+
+</body>
+</html>

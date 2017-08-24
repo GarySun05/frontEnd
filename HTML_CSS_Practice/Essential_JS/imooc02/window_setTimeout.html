@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    在javascript中，我们可以在设定时间间隔之后来执行代码，而不是在函数被调用后立即执行。计时器类型：
+    一次性计时器：仅在指定的延迟时间之后触发一次。
+    间隔性触发计时器：每隔一定的时间间隔就出发一次。
+    计时器方法：
+    setTimeout(): 指定的延迟时间之后来执行代码；
+    clearTimeout(): 取消setTimeout（）设置；
+    setInterval(): 每隔指定的时间执行代码；
+    dearInterval(): 取消setInterval（）设置；
+    -->
+
+    <!--
+        计时器setTimeout()
+        setTimeout()计时器，在载入后延迟指定时间后,去执行一次表达式,仅执行一次。
+        语法:
+        setTimeout(代码,延迟时间);
+        参数说明：
+        1. 要调用的函数或要执行的代码串。
+        2. 延时时间：在执行代码前需等待的时间，以毫秒为单位（1s=1000ms)。
+        当我们打开网页3秒后，在弹出一个提示框，代码如下:
+
+        <!DOCTYPE HTML>
+        <html>
+        <head>
+        <script type="text/javascript">
+          setTimeout("alert('Hello!')", 3000 );
+        </script>
+        </head>
+        <body>
+        </body>
+        </html>
+        当按钮start被点击时，setTimeout()调用函数，在5秒后弹出一个提示框。
+
+        <!DOCTYPE HTML>
+        <html>
+        <head>
+        <script type="text/javascript">
+        function tinfo(){
+          var t=setTimeout("alert('Hello!')",5000);
+         }
+        </script>
+        </head>
+        <body>
+        <form>
+          <input type="button" value="start" onClick="tinfo()">
+        </form>
+        </body>
+        </html>
+        要创建一个运行于无穷循环中的计数器，我们需要编写一个函数来调用其自身。在下面的代码，当按钮被点击后，输入域便从0开始计数。
+
+        <!DOCTYPE HTML>
+        <html>
+        <head>
+        <script type="text/javascript">
+        var num=0;
+        function numCount(){
+         document.getElementById('txt').value=num;
+         num=num+1;
+         setTimeout("numCount()",1000);
+         }
+        </script>
+        </head>
+        <body>
+        <form>
+        <input type="text" id="txt" />
+        <input type="button" value="Start" onClick="numCount()" />
+        </form>
+        </body>
+        </html>
+    -->
+
+    <!--
+        取消计时器clearTimeout()
+        setTimeout()和clearTimeout()一起使用，停止计时器。
+        语法:
+        clearTimeout(id_of_setTimeout)
+        参数说明:
+        id_of_setTimeout：由 setTimeout() 返回的 ID 值。该值标识要取消的延迟执行代码块。
+        下面的例子和上节的无穷循环的例子相似。唯一不同是，现在我们添加了一个 "Stop" 按钮来停止这个计数器：
+               
+        <!DOCTYPE HTML>
+        <html>
+        <head>
+        <script type="text/javascript">
+          var num=0,i;
+          function timedCount(){
+            document.getElementById('txt').value=num;
+            num=num+1;
+            i=setTimeout(timedCount,1000);
+          }
+            setTimeout(timedCount,1000);
+          function stopCount(){
+            clearTimeout(i);
+          }
+        </script>
+        </head>
+        <body>
+          <form>
+            <input type="text" id="txt">
+            <input type="button" value="Stop" onClick="stopCount()">
+          </form>
+        </body>
+        </html>
+    -->
+</head>
+<body>
+
+</body>
+</html>

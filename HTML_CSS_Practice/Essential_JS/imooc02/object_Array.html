@@ -18,11 +18,9 @@
         我们定义myArray数组，并赋值，代码如下：
         var myArray = [2, 8, 6];
         说明：定义了一个数组 myArray，里边的元素是：myArray[0] = 2; myArray[1] = 8; myArray[2] = 6。
-
         数组元素使用：
         数组名[下标] = 值;
         注意: 数组的下标用方括号括起来，从0开始。
-
         数组属性：
         length 用法：<数组对象>.length；返回：数组的长度，即数组里有多少个元素。它等于数组里最后一个元素的下标加一。
         数组方法：
@@ -62,7 +60,6 @@
     <!--
     指定分隔符连接数组元素join()
     join()方法用于把数组中的所有元素放入一个字符串。元素是通过指定的分隔符进行分隔的。
-
     语法：
     arrayObject.join(分隔符)
     参数说明:
@@ -76,7 +73,6 @@
     </script>
     运行结果：
     I,love,JavaScript
-
     我们将使用分隔符来分隔数组中的元素，代码如下：
     <script type="text/javascript">
       var myarr = new Array(3)
@@ -113,7 +109,6 @@
     <!--
     选定元素slice()
     slice() 方法可从已有的数组中返回选定的元素。
-
     语法
     arrayObject.slice(start,end)
     参数说明：
@@ -135,6 +130,7 @@
     3,4
     1,2,3,4,5,6
     -->
+
     <!--
     数组排序sort()
     sort()方法使数组中的元素按照一定的顺序排列。
@@ -143,13 +139,11 @@
     参数说明：
     1.如果不指定<方法函数>，则按unicode码顺序排列。
     2.如果指定<方法函数>，则按<方法函数>所指定的排序方法排序。
-
     myArray.sort(sortMethod);
     注意: 该函数要比较两个值，然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数 a 和 b，其返回值如下：
       若返回值<=-1，则表示 A 在排序后的序列中出现在 B 之前。
       若返回值>-1 && <1，则表示 A 和 B 具有相同的排序顺序。
       若返回值>=1，则表示 A 在排序后的序列中出现在 B 之后。
-
     1.使用sort()将数组进行排序，代码如下：
     <script type="text/javascript">
       var myarr1 = new Array("Hello","John","love","JavaScript");
@@ -161,7 +155,6 @@
     Hello,JavaScript,John,love
     1,100,16,50,6,80
     注意:上面的代码没有按照数值的大小对数字进行排序。
-
     2.如要实现这一点，就必须使用一个排序函数，代码如下：
     <script type="text/javascript">
       function sortNum(a,b) {

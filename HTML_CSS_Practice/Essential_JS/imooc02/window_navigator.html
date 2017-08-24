@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    Navigator对象
+    Navigator 对象包含有关浏览器的信息，通常用于检测浏览器与操作系统的版本。
+    对象属性:
+        appCodeName     浏览器代码明名的字符串表示
+        appName         返回浏览器的名称
+        appVersion      返回浏览器的平台和版本信息
+        platform        返回运行浏览器的操作系统平台
+        userAgent       返回由客户机发送服务器的user-agent头部的值
+
+    查看浏览器的名称和版本，代码如下:
+    <script type="text/javascript">
+       var browser=navigator.appName;
+       var b_version=navigator.appVersion;
+       document.write("Browser name"+browser);
+       document.write("<br>");
+       document.write("Browser version"+b_version);
+    </script>
+    -->
+
+    <!--
+    userAgent
+    返回用户代理头的字符串表示(就是包括浏览器版本信息等的字符串)
+    语法
+    navigator.userAgent
+    几种浏览的user_agent.，像360的兼容模式用的是IE、极速模式用的是chrom的内核。
+
+    使用userAgent判断使用的是什么浏览器(假设使用的是IE8浏览器),代码如下:
+    function validB(){
+      var u_agent = navigator.userAgent;
+      var B_name="Failed to identify the browser";
+      if(u_agent.indexOf("Firefox")>-1){
+          B_name="Firefox";
+      }else if(u_agent.indexOf("Chrome")>-1){
+          B_name="Chrome";
+      }else if(u_agent.indexOf("MSIE")>-1&&u_agent.indexOf("Trident")>-1){
+          B_name="IE(8-10)";
+      }
+        document.write("B_name:"+B_name+"<br>");
+        document.write("u_agent:"+u_agent+"<br>");
+    }
+    运行结果:
+    -->
+</head>
+<body>
+
+</body>
+</html>
