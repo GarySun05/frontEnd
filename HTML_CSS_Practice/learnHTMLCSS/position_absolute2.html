@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>79_绝对定位_子绝父相</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style: none;
+            width: 800px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 100px;
+            background-color: gray;
+        }
+        ul li{
+            float: left;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #ccc;
+        }
+        ul li:nth-of-type(4){
+            color: yellow;
+            position: relative;
+        }
+        ul li img{
+            /*相对定位不会脱离标准流，会继续在标准流中占用一份空间，所以不利于布局页面
+            position: relative;
+            left: 0px;
+            top: 0px;
+            */
+
+            /*绝对定位是以body为参考点。默认情况下，绝对定位的元素以body为参考点，所以会随着浏览器的宽度，高度变化而变化。所以我们很少单独使用绝对定位。*/
+            /*position: absolute;
+            left: 556px;
+            top: 10px;*/
+
+            /*子绝父相，也就是用父元素的盒子匡住儿子的位置，儿子会随着父元素的移动而移动，从而达到固定一定的目的。*/
+            position: absolute;
+            left: 50%;
+            top: -90px;
+            margin-left: -30px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday
+            <img src="../image/a.png" alt="">
+        </li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+        <li>Help</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位（脱离标准流）实现水平居中的效果</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 300px;
+            height: 50px;
+            background-color: red;
+            /*margin: 0 auto;*/
+            position: absolute;
+            left: 50%;
+            /*让margin-left等于width的负的一半，就可以在绝对定位情况下，让其自动居中了。就像margin：0 auto；*/
+            margin-left: -150px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinyHeart</title>
+    <style>
+        body{
+            padding-top:10px;
+        }
+        .all_bg{
+            background-color: #6b9ccf;
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+        }
+        #allCanvas{
+            background-color: black;
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 0px;
+        }
+        #canvas1{
+            background-color: yellow;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        #canvas2{
+            background-color: gray;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="all_bg">
+        <div id="allCanvas">
+            <canvas id="canvas1" width="800" height="600"></canvas>
+            <canvas id="canvas2" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
