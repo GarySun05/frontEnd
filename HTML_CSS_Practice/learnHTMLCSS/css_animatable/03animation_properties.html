@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            /*1.告诉系统需要执行哪个动画；*/
+            animation-name: lnj;
+            /*3.告诉动画持续多久；*/
+            animation-duration: 3s;
+            /*4.告诉系统多少秒实行动画. to specify a delay for the start of an animation.*/
+            animation-delay: 2s;
+            /*to specify the speed curve of the animation*/
+            animation-timing-function: linear;
+            /*to specify the number of times an animation should be played.*/
+            animation-iteration-count: 2;
+            /*Specifies whether or not the animation should play in reverse on alternate cycles*/
+            /*https://www.w3schools.com/cssref/css3_pr_animation-direction.asp*/
+            animation-direction: normal;
+
+        }
+        div:hover{
+            /*paused-running*/
+            animation-play-state: paused;
+        }
+        /*2.告诉系统我们需要自己创建一个名叫lnj的动画；*/
+        @keyframes lnj {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">w3cshools网站animation</a>
+    </div>
+</body>
+</html>

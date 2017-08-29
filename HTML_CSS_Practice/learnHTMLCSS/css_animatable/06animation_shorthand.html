@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    连写顺序：
+    The animation property is a shorthand property for eight of the animation properties:
+        animation-name
+        animation-duration
+        animation-timing-function
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-fill-mode
+        animation-play-state
+    -->
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: move 3s linear 2s 1 normal;
+        }
+        @keyframes move {
+            from{
+                margin-lefe: 0px;
+            }
+            to{
+                margin-left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            /*1.告诉系统需要执行哪个动画；*/
+            animation-name: lnj;
+            /*3.告诉动画持续多久；*/
+            animation-duration: 3s;
+            position: absolute;
+        }
+        div:hover{
+            /*paused-running*/
+            animation-play-state: paused;
+        }
+        /*2.告诉系统我们需要自己创建一个名叫lnj的动画；第二种方法,不用from..to..，用%百分比节点方式*/
+        @keyframes lnj {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 300px;
+            }
+            50%{
+                top: 300px;
+                left: 300px;
+            }
+            75%{
+                left: 0px;
+                top: 300px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">w3cshools网站animation</a>
+</div>
+</body>
+</html>

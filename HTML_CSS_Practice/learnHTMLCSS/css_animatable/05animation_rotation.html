@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--
+    通过观察，我们知道动画是有状态的，等待状态/执行状态/结束状态。
+    -->
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            margin: 100px auto;
+            animation-name: myRotation;
+            animation-duration: 3s;
+            /*指定动画等待状态和结束状态的样式。
+            none：Default value. The animation will not apply any styles to the target element before or after it is executing
+            forwards：After the animation ends (determined by animation-iteration-count), the animation will apply the property values for the time the animation ended。让元素结束的状体保持动画最后一帧的状体。
+            backwards：The animation will apply the property values defined in the keyframe that will start the first iteration of the animation, during the period defined by animation-delay. These are either the values of the from keyframe (when animation-direction is "normal" or "alternate") or those of the to keyframe (when animation-direction is "reverse" or "alternate-reverse")。让元素等待状体的时候显示动画第一帧的样式。
+            both	The animation will follow the rules for both forwards and backwards. That is, it will extend the animation properties in both directions
+            */
+            animation-fill-mode: backwards;
+        }
+        @keyframes myRotation {
+            0%{
+                transform: rotate(10deg);
+            }
+            50%{
+                transform: rotate(50deg);
+            }
+            100%{
+                transform: rotate(70deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>
+        <a href="https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp" target="_blank">address</a>
+    </p>
+    <div class="box2"></div>
+</body>
+</html>

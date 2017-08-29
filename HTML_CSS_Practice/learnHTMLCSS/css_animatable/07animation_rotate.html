@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 600px;
+            height: 180px;
+            border: 1px solid gray;
+            margin: 0 auto;
+        }
+        ul{
+            /*宽度只要大于四个li的宽度就可以，因为每个li是250px，所以写了1500*/
+            width: 1500px;
+            height: 180px;
+            background-color: yellow;
+            animation: move 10s linear 0s infinite normal;
+            /*隐藏滚动条*/
+            overflow: hidden;
+        }
+        @keyframes move {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: -1000px;
+            }
+        }
+        ul li{
+            float: left;
+            list-style: none;
+            width: 250px;
+            height: 180px;
+            background: red;
+            border: 1px solid black;
+            /*为了宽高不变*/
+            box-sizing: border-box;
+        }
+        ul li img{
+            width: 250px;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><img src="../image/view01.jpg"></li>
+            <li><img src="../image/view02.jpg"></li>
+            <li><img src="../image/view03.jpg"></li>
+            <li><img src="../image/view04.jpg"></li>
+            <li><img src="../image/view01.jpg"></li>
+        </ul>
+    </div>
+
+</body>
+</html>

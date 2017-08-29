@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f75e8a0-d4e6-4bb3-bc9e-35ef6d1f7b4a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Essential_JS/Object.html" afterPath="$PROJECT_DIR$/Essential_JS/other/Object.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Essential_JS/Object_DateEtc.html" afterPath="$PROJECT_DIR$/Essential_JS/other/Object_DateEtc.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Essential_JS/basicSyntax.html" afterPath="$PROJECT_DIR$/Essential_JS/other/basicSyntax.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Essential_JS/test01.html" afterPath="$PROJECT_DIR$/Essential_JS/other/test01.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Essential_JS/type_valye_variables.html" afterPath="$PROJECT_DIR$/Essential_JS/other/type_valye_variables.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnHTMLCSS/css_animatable/01transition.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnHTMLCSS/css_animatable/02animation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnHTMLCSS/css_animatable/03animation_properties.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnHTMLCSS/css_animatable/04animation_properties2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnHTMLCSS/css_animatable/05animation_rotation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnHTMLCSS/css_animatable/06animation_shorthand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/learnHTMLCSS/css_animatable/07animation_rotate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +22,28 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="06animation_shorthand.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/06animation_shorthand.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="07animation_rotate.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/07animation_rotate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,14 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Essential_JS/test01.html" />
-        <option value="$PROJECT_DIR$/Essential_JS/type_valye_variables.html" />
-        <option value="$PROJECT_DIR$/Essential_JS/imooc01/document.write.html" />
-        <option value="$PROJECT_DIR$/Essential_JS/imooc01/alert.html" />
-        <option value="$PROJECT_DIR$/Essential_JS/imooc01/popup.html" />
-        <option value="$PROJECT_DIR$/Essential_JS/imooc01/window_open.html" />
-        <option value="$PROJECT_DIR$/Essential_JS/imooc01/window_close.html" />
-        <option value="$PROJECT_DIR$/Essential_JS/imooc01/window_open_close.html" />
         <option value="$PROJECT_DIR$/Essential_JS/imooc01/innerHTML.html" />
         <option value="$PROJECT_DIR$/Essential_JS/imooc01/HTMLchanged.html" />
         <option value="$PROJECT_DIR$/Essential_JS/imooc01/changeHTMLstyle.html" />
@@ -87,6 +103,14 @@
         <option value="$PROJECT_DIR$/Essential_JS/imooc03/dom_.html" />
         <option value="$PROJECT_DIR$/Essential_JS/imooc03/get_setAttribute.html" />
         <option value="$PROJECT_DIR$/Essential_JS/imooc03/dom_attribute.html" />
+        <option value="$PROJECT_DIR$/learnHTMLCSS/css_animatable/01.html" />
+        <option value="$PROJECT_DIR$/learnHTMLCSS/css_animatable/02.html" />
+        <option value="$PROJECT_DIR$/learnHTMLCSS/css_animatable/03animation_attribute.html" />
+        <option value="$PROJECT_DIR$/learnHTMLCSS/css_animatable/03animation_properties.html" />
+        <option value="$PROJECT_DIR$/learnHTMLCSS/css_animatable/04animation_properties2.html" />
+        <option value="$PROJECT_DIR$/learnHTMLCSS/css_animatable/05animation_rotation.html" />
+        <option value="$PROJECT_DIR$/learnHTMLCSS/css_animatable/06animation_shorthand.html" />
+        <option value="$PROJECT_DIR$/learnHTMLCSS/css_animatable/07animation_rotate.html" />
       </list>
     </option>
   </component>
@@ -120,6 +144,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,14 +156,18 @@
             <path>
               <item name="HTML_CSS_Practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="HTML_CSS_Practice" type="462c0819:PsiDirectoryNode" />
-              <item name="Essential_JS" type="462c0819:PsiDirectoryNode" />
+              <item name="learnHTMLCSS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HTML_CSS_Practice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HTML_CSS_Practice" type="462c0819:PsiDirectoryNode" />
+              <item name="learnHTMLCSS" type="462c0819:PsiDirectoryNode" />
+              <item name="css_animatable" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,16 +237,18 @@
       <workItem from="1503675835223" duration="10126000" />
       <workItem from="1503687134206" duration="470000" />
       <workItem from="1503687738255" duration="69000" />
+      <workItem from="1503688141990" duration="7501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92224000" />
+    <option name="totallyTimeSpent" value="99725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-6" width="1310" height="925" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18287037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18287037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -245,78 +277,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Essential_JS/other/Object_DateEtc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/other/test01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/imooc01/document.write.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/other/type_valye_variables.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/imooc01/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/imooc01/window_close.html" />
-    <entry file="file://$PROJECT_DIR$/Essential_JS/imooc01/window_open_close.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/imooc01/innerHTML.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/imooc01/changeHTMLstyle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/imooc01/displayPorperty.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Essential_JS/imooc01/className.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="33" column="62" lean-forward="false" selection-start-line="33" selection-start-column="62" selection-end-line="33" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codecademy_HTML_CSS/Program02.html" />
     <entry file="file://$PROJECT_DIR$/Essential_JS/imooc02/onmouseover.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -563,6 +523,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/01transition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/02animation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/05animation_rotation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="40" column="106" lean-forward="false" selection-start-line="40" selection-start-column="106" selection-end-line="40" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/04animation_properties2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133">
+          <caret line="24" column="59" lean-forward="false" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/03animation_properties.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/06animation_shorthand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="29" column="35" lean-forward="false" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/image/view04.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/image/view05.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/image/view03.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/image/view02.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/image/view01.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learnHTMLCSS/css_animatable/07animation_rotate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>

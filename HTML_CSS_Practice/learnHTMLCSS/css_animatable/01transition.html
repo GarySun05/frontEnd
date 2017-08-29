@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过度</title>
+    <!--
+        1. 过度和动画之间的区别：
+            （1）过度必须人为的触发才会执行动画；
+            （2）动画不需要人为的触发就看看执行动画；
+        2.形同点：
+            （1）过度和动画都是用来给元素添加动画的；
+            （2）过度和动画都是系统新增的一些属性。
+            （3）过度和动画都需要满足三要素才会有动画效果。
+    -->
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            transition-property: margin-left;
+            transition-duration: 3s;
+        }
+        div:hover{
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
